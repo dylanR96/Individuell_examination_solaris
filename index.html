@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Document</title>
 </head>
+
 <body>
-  <input type="text" name="" id="planetSearch"><button id="btnSubmit"></button>
+  <header class="header">
+    <input type="text" name="" class="header__search" id="planetSearch"><button class="header__btn" id="btnSubmit"></button>
+    <span id="errorMessage"></span>
+  </header>
+  <main class="main">
+    <section class="main__solar-system">
+      <div class="main__sun" id="sun"></div>
+      <div class="main__mercury" id="mercury"></div>
+      <div class="main__venus" id="venus"></div>
+      <div class="main__earth" id="earth"></div>
+      <div class="main__mars" id="mars"></div>
+      <div class="main__jupiter" id="jupiter"></div>
+      <div class="main__saturn" id="saturn"></div>
+      <div class="main__uranus" id="uranus"></div>
+      <div class="main__neptune" id="neptune"></div>
+    </section>
+    <section class="main__solar-info" id="solarInfo"></section>
+  </main>
 </body>
-<script nomodule=""></script>
-<script type="module" src="js/main.js"></script>
+<!-- <script nomodule=""></script> -->
+<!-- type="module" -->
+<script src="js/main.js"></script>
+
 </html>
