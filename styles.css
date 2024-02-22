@@ -35,7 +35,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .main__solar-system {
@@ -43,22 +42,6 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 80svh;
-}
-
-.main__planet-info {
-  background-color: rgb(20, 22, 43);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100svw;
-  height: 80svh;
-  margin-top: 5rem;
-  color: black;
-  gap: 5rem;
-  padding-left: 15rem;
-  padding-right: 15rem;
 }
 
 .main__sun {
@@ -127,35 +110,65 @@ body {
   border-radius: 80px;
 }
 
-.nameStyle {
-  font-size: 32px;
+.main__exit-button{
+  display: flex;
+  justify-content: right;
+
+  width: 30rem;
+  height: 3rem;
+  border-radius: 50px;
+
+}
+
+.main__planet-info {
+  background-color: rgb(20, 22, 43);
+  color: white;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  width: 50svw;
+  height: 50svh;
+  margin-top: 5rem;
+  color: black;
+  gap: 1rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.main__planet-info-style--test {
+  font-size: 7rem;
   color: white;
 }
 
-.LnameStyle {
+.main__planet-info-style--testy {
   color: rgb(255, 208, 41);
+  font-size: 4rem;
+  
 }
 
-.descStyle{
-  color: white;
+.main__planet-info-style {
+  color: gray;
+  line-height: 1.7;
 }
 
-.circStyle{
-  color: white;
+
+.testy {
+  display: flex;
+  border: 1px solid gray;
+  border-left: none;
+  border-right: none;
 }
 
-.distStyle{
-  color: white;
+.testy1 {
+  flex-direction: column;
+  
 }
 
-.tempDStyle{
-  color: white;
+.testy2 {
+  flex-direction: column;
+  margin-left: 4rem;
 }
 
-.tempNStyle{
-  color: white;
-}
-
-.numMoonStyle{
+.main_planet-info--headers {
   color: white;
 }
