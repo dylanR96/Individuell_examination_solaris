@@ -10,12 +10,14 @@
 
 <body>
   <header class="header">
-    <input type="text" name="" class="header__search" id="planetSearch"><button class="header__btn"
-      id="btnSubmit"></button>
+    <div class="header__search-wrapper">
+      <input type="text" name="" class="header__search-bar" id="planetSearch">
+      <button class="header__btn" id="btnSubmit"></button>
+    </div>
     <span id="errorMessage"></span>
   </header>
   <main class="main">
-    <section class="main__solar-system">
+    <section class="main__planets-wrapper">
       <div class="main__sun" id="sun"></div>
       <div class="main__mercury" id="mercury"></div>
       <div class="main__venus" id="venus"></div>
@@ -27,35 +29,37 @@
       <div class="main__neptune" id="neptune"></div>
     </section>
     <section class="main__planet-info" id="planetInfo">
-      <div class="main__exit-button">
-        <button id="my2Btn">X</button>
+      <div class="main__close-info-wrapper">
+        <button id="closeInfoBtn">X</button>
       </div>
-      <div id="planetN" class="main__planet-info-style--test"></div>
-      <div id="planetLN" class="main__planet-info-style--testy"></div>
-      <div id="planetD" class="main__planet-info-style"></div>
-      <div class="testy">
-        <div class="testy1">
-          <div id="planetC" class="main__planet-info-style">
+      <div id="planetName" class="main__planet-info-style--name"></div>
+      <div id="planetLatinName" class="main__planet-info-style--latin-name"></div>
+      <div id="planetDesc" class="main__planet-info-style"></div>
+      <div class="main__headers-info-wrapper">
+        <div>
+          <div id="planetCircum" class="main__planet-info-style">
             <h5 class="main_planet-info--headers">CIRCUMFERENCE</h5>
           </div>
 
-          <div id="planetTD" class="main__planet-info-style">
+          <div id="planetTempDay" class="main__planet-info-style">
             <h5 class="main_planet-info--headers">MAX DAY-TIME TEMPERATURE</h5>
           </div>
         </div>
-        <div class="testy2">
-          <div id="planeKM" class="main__planet-info-style">
+        <div class="main__headers-info--right-coloum">
+          <div id="planetKm" class="main__planet-info-style">
             <h5 class="main_planet-info--headers">KM FROM THE SUN</h5>
           </div>
 
-          <div id="planetTN" class="main__planet-info-style">
+          <div id="planetTempNight" class="main__planet-info-style">
             <h5 class="main_planet-info--headers">MIN NIGHT-TIME TEMPERATURE</h5>
           </div>
         </div>
       </div>
       </div>
-      <div id="planetM" class="main__planet-info-style">
+      <div class="main__planet-info-style" id="planetMoons">
         <h5 class="main_planet-info--headers">MOONS</h5>
+        
+        </div>
       </div>
 
     </section>

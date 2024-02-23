@@ -1,7 +1,7 @@
-export { checkLocal }
+export { checkLocalStorage }
 
 //Checks local storage, calls prints info if there is a local storage or call fetchAPiKey is there is none
-function checkLocal() {
+function checkLocalStorage() {
   let data;
   if (localStorage.getItem("Solar System")) {
     data = JSON.parse(localStorage.getItem('Solar System'));
