@@ -5,7 +5,6 @@ function checkLocalStorage() {
   let data;
   if (localStorage.getItem("Solar System")) {
     data = JSON.parse(localStorage.getItem('Solar System'));
-    // printInfo(data);
   } else {
    data = fetchhAPIKey();
   }
@@ -25,8 +24,8 @@ async function fetchhAPIKey() {
     const data = await response.json();
     return fetchAPi(data);
   } catch (error) {
-    console.error("Error: " + error);
-    alert("An error has occurred! Please try again later.")
+    console.error(`Error: ${error}`);
+    alert("Error: ${error} has occurred! Please try again later.")
   }
 }
 
@@ -42,7 +41,7 @@ async function fetchAPi(data) {
     localStorage.setItem("Solar System", JSON.stringify(bodies));
     return bodies;
   } catch (error) {
-    console.error("Error: " + error);
-    alert("An error has occurred! Please try again later.")
+    console.error(`Error: ${error}`);
+    alert("Error: ${error} has occurred! Please try again later.")
   }
 }
