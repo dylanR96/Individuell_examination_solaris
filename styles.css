@@ -8,7 +8,7 @@ html {
   font-size: 10px;
 }
 
-body {
+.body {
   background-color: rgb(20, 22, 43);
   height: 100svh;
   width: 100svh;
@@ -21,6 +21,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-top: 4rem;
+  margin-bottom: 8rem;
 }
 
 .header__search-wrapper {
@@ -28,8 +29,8 @@ body {
 }
 
 .header__search-bar {
-  width: 30rem;
-  height: 3rem;
+  width: 33rem;
+  height: 3.5rem;
   border: none;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -38,8 +39,8 @@ body {
 }
 
 .header__btn {
-  width: 4rem;
-  height: 3rem;
+  width: 4.3rem;
+  height: 3.5rem;
   border: none;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -48,7 +49,7 @@ body {
 
 .header__error-message {
   height: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .main {
@@ -74,10 +75,9 @@ body {
 }
 
 .main__solen {
-  position: relative;
   width: 30rem;
   height: 60rem;
-  background: linear-gradient(to bottom, rgb(238, 203, 6), rgb(208, 92, 20), rgb(203, 66, 11), rgb(205, 128, 3), rgb(111, 43, 11));
+  background: linear-gradient(to bottom, rgb(238, 203, 6), rgb(239, 103, 18), rgb(230, 156, 9), rgb(229, 166, 9), rgb(216, 137, 18));
   border-radius: 50%;
   transform: translateX(-30rem); 
   box-shadow: 15px 5px 90px rgb(220, 106, 6);
@@ -86,22 +86,25 @@ body {
 .main__merkurius {
   width: 2rem;
   height: 2rem;
-  background-color: rgb(140, 139, 133);
+  background: linear-gradient(to bottom, rgb(94, 94, 94), rgb(161, 159, 159), rgb(113, 112, 112), rgb(179, 179, 178), rgb(74, 74, 74));
   border-radius: 50%;
+  margin-right: 3rem;
 }
 
 .main__venus{
   width: 3rem;
   height: 3rem;
-  background-color: rgb(231, 204, 203);
+  background: linear-gradient(to bottom, rgb(249, 193, 191), rgb(189, 162, 161), rgb(195, 145, 145), rgb(242, 189, 187), rgb(198, 172, 171));
   border-radius: 50%;
+  margin-right: 3rem;
 }
 
 .main__jorden {
   width: 3.5rem;
   height: 3.5rem;
-  background:  radial-gradient(ellipse at 50%, rgb(101, 152, 7), rgb(87, 128, 10), rgb(115, 187, 254), rgb(101, 152, 7), rgb(115, 187, 254), rgb(115, 187, 254));
+  background:  radial-gradient(ellipse at 50%, rgb(171, 214, 93), rgb(171, 214, 93), rgb(115, 187, 254), rgb(72, 161, 233), rgb(115, 187, 254), rgb(115, 187, 254));
   border-radius: 50%;
+  margin-right: 3rem;
 }
 
 .main__mars{
@@ -109,25 +112,27 @@ body {
   height: 2rem;
   background: linear-gradient(to bottom, rgb(219, 144, 74), rgb(157, 88, 24), rgb(175, 118, 65), rgb(119, 79, 42), rgb(52, 40, 29));
   border-radius: 50%;
+  margin-right: 3rem;
 }
 
 .main__jupiter{
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
-  background: linear-gradient(to bottom, rgb(219, 144, 74), rgb(157, 88, 24), rgb(175, 118, 65), rgb(119, 79, 42), rgb(52, 40, 29));
+  background: linear-gradient(to bottom, rgb(119, 156, 182), rgb(243, 183, 127), rgb(215, 192, 171), rgb(174, 114, 59), rgb(90, 70, 53));
+  margin-right: 3rem;
 }
 
 .main__saturnus {
   position: relative;
   width: 12rem;
   height: 12rem;
-  background: linear-gradient(to bottom, rgb(238, 203, 6), rgb(208, 92, 20), #b8b08d, #b8b08d, rgb(111, 43, 11));
+  background: linear-gradient(to bottom, rgb(171, 162, 110), rgb(187, 141, 113), #b8b08d, #b8b08d, #958d6c, rgb(142, 84, 57));
   border-radius: 50%;
   align-items: center;
 }
 
-.main__saturn__ring {
+.main__saturn-ring {
   position: absolute;
   width: 18rem;
   height: 15rem;
@@ -138,28 +143,30 @@ body {
   left: -3.1rem;
 }
 
-.main__saturn__ring--big {
+.main__saturn-ring--big {
   position: absolute;
-  width: 63rem;
-  height: 64rem;
+  width: 57rem;
+  height: 60rem;
   border: solid 40px #b8b08d;
   border-radius: 50%;
   transform: rotate3d(1,0,0,75deg);
   border-top: none;
-  left: -7.3rem;
+  left: -6.3rem;
 }
 
 .main__uranus{
   width: 6rem;
   height: 6rem;
-  background-color: rgb(201, 212, 241);
+  background: linear-gradient(to bottom, rgb(60, 210, 198), rgb(110, 222, 213), rgb(143, 220, 214), rgb(71, 151, 144), rgb(158, 219, 214));
+  margin-right: 3rem;
+  margin-left: 3rem;
   border-radius: 50%;
 }
 
 .main__neptunus {
   width: 6rem;
   height: 6rem;
-  background-color: rgb(122, 145, 167);
+  background: linear-gradient(to bottom, rgb(67, 122, 233), rgb(41, 99, 216), rgb(96, 128, 191), rgb(41, 118, 219), rgb(51, 126, 240));
   border-radius: 50%;
 }
 
@@ -187,22 +194,23 @@ body {
   width: 80rem;
 }
 
-.main__planet-info-style--name {
-  font-size: 7rem;
+.main__planet-name-style {
+  font-size: 8rem;
   color: white;
 }
 
-.main__planet-info-style--latin-name {
+.main__planet-latin-name-style {
   color: rgb(255, 208, 41);
   font-size: 4rem;
   margin-bottom: 3rem;
 }
 
 .main__planet-info-style {
-  color: gray;
+  color: rgb(173, 171, 171);
   line-height: 1.7;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 
 
@@ -219,8 +227,8 @@ body {
 
 .main_planet-info--headers {
   color: white;
+  font-size: 1.2rem;
 }
-
 
 @media only screen and (max-width: 600px) {
   .main__planets-wrapper {

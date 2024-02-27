@@ -8,8 +8,8 @@
   <title>Solaris</title>
 </head>
 
-<body>
-
+<body class="body">
+  <!--Header for search bar and error message-->
   <header class="header">
     <div class="header__search-wrapper">
       <input type="text" name="" class="header__search-bar" id="planetSearch">
@@ -17,8 +17,12 @@
     </div>
     <span class="header__error-message" id="errorMessage"></span>
   </header>
+  <!--End of header-->
 
+  <!--Main-->
   <main class="main">
+
+    <!--Section for visible planets on page load-->
     <section class="main__planets-wrapper">
       <div class="main__solen" id="sun"></div>
       <div class="main__merkurius" id="mercury"></div>
@@ -27,29 +31,34 @@
       <div class="main__mars" id="mars"></div>
       <div class="main__jupiter" id="jupiter"></div>
       <div class="main__saturnus" id="saturn">
-        <div class="main__saturn__ring"></div>
+        <div class="main__saturn-ring"></div>
       </div>
       <div class="main__uranus" id="uranus"></div>
       <div class="main__neptunus" id="neptune"></div>
     </section>
+    <!--End of section-->
 
+    <!--Div for planet view when planet info is present-->
     <div class="main__planet-zoomed-view"></div>
+    <!--End of div-->
 
+    <!--Section for planet info-->
     <section class="main__planet-info" id="planetInfo">
 
-
+      <!--Div for close planet info btn-->
       <div class="main__close-info-wrapper">
         <button class="main__close-info-btn" id="closeInfoBtn">X</button>
       </div>
-      <div id="planetName" class="main__planet-info-style--name"></div>
-      <div id="planetLatinName" class="main__planet-info-style--latin-name"></div>
+      <!--End of div-->
+
+      <div id="planetName" class="main__planet-name-style"></div>
+      <div id="planetLatinName" class="main__planet-latin-name-style"></div>
       <div id="planetDesc" class="main__planet-info-style"></div>
       <div class="main__headers-info-wrapper">
         <div>
           <div id="planetCircum" class="main__planet-info-style">
             <h5 class="main_planet-info--headers">OMKRETS</h5>
           </div>
-
           <div id="planetTempDay" class="main__planet-info-style">
             <h5 class="main_planet-info--headers">MAXIMAL DAG-TID TEMPERATUR</h5>
           </div>
@@ -64,20 +73,21 @@
         </div>
       </div>
       </div>
-
       <div class="main__planet-info-style" id="planetMoons">
         <h5 class="main_planet-info--headers">MÅNAR</h5>
       </div>
       </div>
-
     </section>
+    <!--End of section-->
 
   </main>
-
+  <!--End of main-->
 </body>
 
-<!-- <script nomodule="noModule.js"></script> -->
-<!-- type="module" -->
+<!--Script for browser without module support-->
+<script nomodule="noModule.js"></script>
+
+<!--Script for browser with module support-->
 <script type="module" src="js/main.js"></script>
 
 </html>

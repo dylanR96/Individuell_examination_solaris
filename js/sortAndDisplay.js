@@ -1,14 +1,7 @@
-import { planetContainer, planetSearch, errorMessage, planetClasses } from "./declare.js"
-export { sortInfo }
+import { planetContainer, planetClasses, planetZoomIn } from "./declare.js"
+export { sortApiInfo }
 
-let mainWrapper = document.querySelector('.main');
-let planetInfo = document.getElementById('planetInfo');
-let planetsWrapper = document.querySelector('.main__planets-wrapper');
-let planetZoomIn = document.querySelector('.main__planet-zoomed-view');
-let closeInfoBtn = document.getElementById('closeInfoBtn');
-closeInfoBtn.addEventListener('click', closeWindow);
-
-function sortInfo(data) {
+function sortApiInfo(data) {
   let planetData = data;
   let planetNameData = planetData.name.toUpperCase();
   let planetLNameData = planetData.latinName.toUpperCase();
@@ -29,29 +22,27 @@ function sortInfo(data) {
     planetTNightData,
   ];
 
-  printInfo(planetDataArr, planetMoonsData, planetNameData);
+  displayInfo(planetDataArr, planetMoonsData, planetNameData);
 }
 
-// Creates element and fills element with planet info depending on index
-// Search through object for specific keys to fill element
-function printInfo(sortedData, moonData, planetName) {
+function displayInfo(sortedData, moonData, planetName) {
+  planetZoomIn.textContent = "";
   let planetMoons = document.getElementById('planetMoons');
   let planetView = document.createElement('div');
   let saturnsRing = document.createElement('div');
   let moonInfo = document.createElement('p');
   planetMoons.removeChild(planetMoons.lastChild);
-  planetInfo.style.display = 'flex';
-  planetsWrapper.style.display = 'none';
   planetZoomIn.style.display = 'flex';
-  planetView.style.height = '50rem';
-  planetView.style.width = '50rem';
+  planetView.style.height = '45rem';
+  planetView.style.width = '45rem';
   planetView.style.transform = 'translateX(0)';
+  planetView.style.margin = '0';
 
   for (let i = 0; i < planetClasses.length; i++) {
     planetName = planetName.toLowerCase();
     let isPlanetInClasses = planetClasses.includes(`.main__${planetName}`);
     if (isPlanetInClasses && planetName == 'saturnus') {
-      saturnsRing.classList.add('main__saturn__ring--big');
+      saturnsRing.classList.add('main__saturn-ring--big');
       planetView.appendChild(saturnsRing);
     }
     planetView.classList.add(`main__${planetName}`);
@@ -70,7 +61,7 @@ function printInfo(sortedData, moonData, planetName) {
   }
 
   if (moonData.length == 0) {
-    planetName == "SOLEN" ?
+    planetName == "solen" ?
       moonInfo.innerHTML = 'Denna stjärna har ingen måne.' :
       moonInfo.innerHTML = 'Denna planet har ingen måne.';
   } else {
@@ -80,14 +71,4 @@ function printInfo(sortedData, moonData, planetName) {
   planetMoons.insertAdjacentElement('beforeend', moonInfo);
 }
 
-function closeWindow() {
-  mainWrapper.style.alignItems = '';
-  planetsWrapper.style.display = 'flex';
-  planetInfo.style.display = 'none';
-  planetZoomIn.textContent = "";
-  planetZoomIn.style.display = 'none';
-  planetSearch.value = '';
-  errorMessage.textContent = '';
-  errorMessage.style.color = '';
-  planetSearch.style.border = '';
-}
+
