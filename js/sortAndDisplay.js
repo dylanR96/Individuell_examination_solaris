@@ -32,7 +32,7 @@ function sortApiInfo(data) {
 
 //Function that displays planet information
 function displayInfo(sortedData, moonData, planetName) {
-
+  let windowWidth = window.innerWidth;
   //Clears div that displays a planet when search or clicked
   planetZoomIn.textContent = "";
   //Divs for when planet is displayed next to planet info
@@ -47,10 +47,17 @@ function displayInfo(sortedData, moonData, planetName) {
 
   //Styling for planet displayed along side planet information
   planetZoomIn.style.display = 'flex';
-  planetView.style.height = '45rem';
-  planetView.style.width = '45rem';
   planetView.style.transform = 'translateX(0)';
   planetView.style.margin = '0';
+  //If statement to check window size for responsive planets
+  if (windowWidth < 768) {
+    planetView.style.height = '30rem';
+    planetView.style.width = '30rem';
+  } else {
+    planetView.style.height = '45rem';
+    planetView.style.width = '45rem';
+  }
+  
 
   //For loop to give correct styling(class) to choosen planet
   //A condition to check if planet is saturn, extra class and element is then displayed
