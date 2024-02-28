@@ -9,7 +9,13 @@ html {
 }
 
 .body {
-  background-color: rgb(20, 22, 43);
+  background-color: black;
+  background-image:
+    radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px),
+    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   height: 100svh;
   width: 100svh;
 }
@@ -79,7 +85,7 @@ html {
   height: 60rem;
   background: linear-gradient(to bottom, rgb(238, 203, 6), rgb(239, 103, 18), rgb(230, 156, 9), rgb(229, 166, 9), rgb(216, 137, 18));
   border-radius: 50%;
-  transform: translateX(-30rem); 
+  transform: translateX(-30rem);
   box-shadow: 15px 5px 90px rgb(220, 106, 6);
 }
 
@@ -91,7 +97,7 @@ html {
   margin-right: 3rem;
 }
 
-.main__venus{
+.main__venus {
   width: 3rem;
   height: 3rem;
   background: linear-gradient(to bottom, rgb(249, 193, 191), rgb(189, 162, 161), rgb(195, 145, 145), rgb(242, 189, 187), rgb(198, 172, 171));
@@ -102,12 +108,12 @@ html {
 .main__jorden {
   width: 3.5rem;
   height: 3.5rem;
-  background:  radial-gradient(ellipse at 50%, rgb(171, 214, 93), rgb(171, 214, 93), rgb(115, 187, 254), rgb(72, 161, 233), rgb(115, 187, 254), rgb(115, 187, 254));
+  background: radial-gradient(ellipse at 50%, rgb(171, 214, 93), rgb(171, 214, 93), rgb(115, 187, 254), rgb(72, 161, 233), rgb(115, 187, 254), rgb(115, 187, 254));
   border-radius: 50%;
   margin-right: 3rem;
 }
 
-.main__mars{
+.main__mars {
   width: 2rem;
   height: 2rem;
   background: linear-gradient(to bottom, rgb(219, 144, 74), rgb(157, 88, 24), rgb(175, 118, 65), rgb(119, 79, 42), rgb(52, 40, 29));
@@ -115,7 +121,7 @@ html {
   margin-right: 3rem;
 }
 
-.main__jupiter{
+.main__jupiter {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
@@ -138,7 +144,7 @@ html {
   height: 15rem;
   border: solid 20px #b8b08d;
   border-radius: 50%;
-  transform: rotate3d(1,0,0,75deg);
+  transform: rotate3d(1, 0, 0, 75deg);
   border-top: none;
   left: -3.1rem;
 }
@@ -149,12 +155,12 @@ html {
   height: 60rem;
   border: solid 40px #b8b08d;
   border-radius: 50%;
-  transform: rotate3d(1,0,0,75deg);
+  transform: rotate3d(1, 0, 0, 75deg);
   border-top: none;
   left: -6.3rem;
 }
 
-.main__uranus{
+.main__uranus {
   width: 6rem;
   height: 6rem;
   background: linear-gradient(to bottom, rgb(60, 210, 198), rgb(110, 222, 213), rgb(143, 220, 214), rgb(71, 151, 144), rgb(158, 219, 214));
@@ -183,7 +189,6 @@ html {
 }
 
 .main__planet-info {
-  background-color: rgb(20, 22, 43);
   color: white;
   display: none;
   justify-content: center;
@@ -247,6 +252,6 @@ html {
     background-color: rgb(255, 208, 41);
     border-radius: 50%;
     box-shadow: 0px 5px 90px rgb(255, 208, 41);
-    transform: translateX(0rem); 
+    transform: translateX(0rem);
   }
 }
