@@ -1,3 +1,4 @@
+//Denna modul hämtar  id och klasser som används på sidan samt skapar arrays för enklare hantering av data
 export { planetContainer, planetSearch, errorMessage, planets, planetClasses, submitBtn, closeInfoBtn, planetInfo, planetsWrapper, planetZoomIn }
 
 //Id's for planet divs

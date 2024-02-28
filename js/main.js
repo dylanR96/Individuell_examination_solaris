@@ -1,4 +1,4 @@
-//Main module that calls a function on page load that checks local storage or fetches API
+//Main modulen som anropar en funktion vid sidladdning som kontrollerar lokal lagring eller hämtar API
 import { checkLocalStorage } from "./api.js"
 import { createPlanetEvents } from "./events.js"
 

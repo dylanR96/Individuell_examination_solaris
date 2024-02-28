@@ -1,3 +1,5 @@
+//Denna modul kontollerar först om det finns en local storage om inte så anropas apin för att hämta api nyckeln
+//Sedan anropas apin med api nyckeln för att hämta datan om planeterna 
 export { checkLocalStorage }
 
 //Checks local storage, calls prints info if there is a local storage or call fetchAPiKey is there is none

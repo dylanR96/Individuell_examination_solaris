@@ -1,11 +1,12 @@
-//Declare module 
+//Denna modul skapar alla eventlisteners samt skickar vidare data variabeln till sortAndDisplay modulen
+//Denna modul får data variabeln från modulen main
 import { checkLocalStorage } from "./api.js"
 import { sortApiInfo } from "./sortAndDisplay.js"
 import { planets, submitBtn, planetSearch, errorMessage, closeInfoBtn, planetInfo, planetsWrapper, planetZoomIn } from "./declare.js"
 //planetContainer, planetClasses, planetZoomIn
 export { createPlanetEvents }
 
-//Event listener for search bar btn
+//Event listener for search bar button
 submitBtn.addEventListener('click', () => {
   let data;
   //Retrives infromation from checkLocalStorage function
@@ -69,6 +70,7 @@ function createPlanetEvents(data) {
   }
 }
 
+//Event listener to close planet information, resets style to hide information and display planets
 closeInfoBtn.addEventListener('click', () => {
   planetsWrapper.style.display = 'flex';
   planetInfo.style.display = 'none';
